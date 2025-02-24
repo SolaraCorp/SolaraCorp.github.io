@@ -44,3 +44,8 @@ document.querySelectorAll('section:not(#home)').forEach(section => {
     section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
     observer.observe(section);
 });
+
+window.addEventListener('load', function() {
+    document.querySelector('.contact-form').reset();
+});
+
